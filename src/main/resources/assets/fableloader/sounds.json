@@ -1,0 +1,10 @@
+{
+  "intro_sound": {
+    "sounds": [
+      {
+        "name": "fableloader:intro_audio",
+        "stream": false
+      }
+    ]
+  }
+}

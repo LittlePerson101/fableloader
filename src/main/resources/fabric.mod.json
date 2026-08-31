@@ -1,0 +1,38 @@
+{
+	"schemaVersion": 1,
+	"id": "fableloader",
+	"version": "${version}",
+	"name": "FableLoader",
+	"description": "Custom Pokemon loading screen, based off of my original mod Pokeloader.",
+	"authors": [
+		"LittlePerson101"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "AGPL-3.0-or-later",
+	"icon": "assets/fableloader/icon.png",
+	"environment": "client",
+	"entrypoints": {
+		"main": [
+			"io.github.littleperson101.fableloader.FableLoader"
+		],
+		"client": [
+			"io.github.littleperson101.fableloader.client.FableLoaderClient"
+		]
+	},
+	"mixins": [
+		"fableloader.mixins.json",
+		{
+			"config": "fableloader.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.19.3",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}

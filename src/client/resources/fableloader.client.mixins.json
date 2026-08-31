@@ -1,0 +1,15 @@
+{
+	"required": true,
+	"package": "io.github.littleperson101.fableloader.client.mixin",
+	"compatibilityLevel": "JAVA_21",
+	"client": [
+		"ExampleClientMixin",
+        "LoadingOverlayMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	},
+	"overwrites": {
+		"requireAnnotations": true
+	}
+}
